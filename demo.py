@@ -1,0 +1,5 @@
+file = open("examplefile.txt", "a")
+file.write("add to end")
+file.close()
+file = open("examplefile.txt", "r")
+print(file.read())
