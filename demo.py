@@ -1,8 +1,6 @@
-def printLoop(loop_amount, message):
-    for i in range(loop_amount):
-        print(message)
+names = ["fred", "jimmy", "alexa"]
 
-num = 3
-message = "Hello World!"
-
-printLoop(num, message)
+names[1] = "Marinah"
+for name in names:
+    names.append("j")
+    print(name)
