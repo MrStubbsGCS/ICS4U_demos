@@ -1,6 +1,8 @@
-names = ["fred", "jimmy", "alexa"]
+twoD = [[1, 2, 3],[4, 5, 6]]
 
-names[1] = "Marinah"
-for name in names:
-    names.append("j")
-    print(name)
+print(twoD[1][1])
+
+for i in twoD:
+    for x in i:
+        print(x)
+
