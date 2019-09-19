@@ -13,5 +13,16 @@ for i in range(length):
 
     print(grid[i])
 
+listWords = ["word1", "word2", "word3", "word4", "word5", "word6"]
+newList = []
+for i in listWords:
+    randomI = random.randint(0, 5)
+    while listWords[randomI] in newList:
+        randomI = random.randint(0, 5)
+    newList.append(listWords[randomI])
+
+print(newList)
+
+
 
 
