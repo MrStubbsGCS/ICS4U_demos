@@ -1,8 +1,17 @@
-twoD = [[1, 2, 3],[4, 5, 6]]
+import random
 
-print(twoD[1][1])
+alphabet = "abcdefghijklmnopqrstuvwxyz"
 
-for i in twoD:
-    for x in i:
-        print(x)
+grid = []
+length = 7
+
+for i in range(length):
+    grid.append([])
+    for j in range(length):
+        letter = random.randint(0,25)
+        grid[i].append(alphabet[letter])
+
+    print(grid[i])
+
+
 
