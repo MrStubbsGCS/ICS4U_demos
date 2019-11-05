@@ -1,8 +1,16 @@
-dict = {}
+class WaterBottle:
+    def __init__(self, volume, colour, shape):
+        self.volume = volume
+        self.colour = colour
+        self.shape = shape
 
-for i in range(35):
-    dict[i] = str(i)
+    def __len__(self):
+        return self.volume
 
-for x in dict:
-    if dict[x] == "33":
-        print(x)
+
+    def __str__(self):
+        return "Our water bottle is a " +self.colour+self.shape
+
+camelback = WaterBottle(500, "Orangey pinkish red or maybve coral idk", "cylinder")
+
+print(len(camelback))
