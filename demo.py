@@ -1,16 +1,25 @@
-class WaterBottle:
-    def __init__(self, volume, colour, shape):
-        self.volume = volume
-        self.colour = colour
-        self.shape = shape
-
-    def __len__(self):
-        return self.volume
+class Vehicle:
+    def __init__(self, capacity, speed):
+        self.capacity = capacity
+        self.speed = speed
 
 
-    def __str__(self):
-        return "Our water bottle is a " +self.colour+self.shape
+class SpaceShip(Vehicle):
+    def __init__(self, numberOfRockets, inSpace, capacity, speed):
+        super().__init__(capacity, speed)
+        self.numberOfRockets = numberOfRockets
+        self.inSpace = inSpace
 
-camelback = WaterBottle(500, "Orangey pinkish red or maybve coral idk", "cylinder")
+class MilleniumFalcon(SpaceShip):
+    def __init__(self, guns, chewbaccas, numberOfRockets, inSpace, capacity, speed):
+        super().__init__(numberOfRockets, inSpace, capacity, speed)
+        self.guns = guns
+        self.chewbaccas = chewbaccas
 
-print(len(camelback))
+    def isHanDed(self):
+        return True
+
+
+falconX = SpaceShip(4, False, 0, 300)
+milFalc = MilleniumFalcon(4, 1, 10, True, 100, 6)
+print(milFalc.isHanDed())
