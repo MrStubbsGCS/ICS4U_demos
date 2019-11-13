@@ -3,6 +3,7 @@ Sample Python/Pygame Programs
 Simpson College Computer Science
 http://programarcadegames.com/
 http://simpson.edu/computer-science/
+fFound here: http://programarcadegames.com/python_examples/f.php?file=move_sprite_keyboard_jump.py
 """
 
 import pygame
