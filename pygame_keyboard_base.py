@@ -52,7 +52,11 @@ while not done:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             done = True
-
+        """
+        The code below will work for applications where you want one thing to happen with each button press.
+        If you want to make your code react while a key is pressed (ie/ holding down left arrow to continually move a sprite left)
+        then check out this solution https://stackoverflow.com/a/9961598 
+        """
         elif event.type == pygame.KEYDOWN:
             if event.key == pygame.K_LEFT:
                 player.rect.x -= player.rect.width
